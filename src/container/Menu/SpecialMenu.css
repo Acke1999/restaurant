@@ -1,0 +1,86 @@
+.app-special-menu {
+    background-color: var(--color-black);
+    flex-direction: column;
+}
+
+.app-special-menu-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.app-special-menu-menu {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.app-special-menu-heading {
+    color: var(--color-white);
+    font-family: var(--font-base);
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0.04em;
+}
+.app-special-menu-wine,
+.app-special-menu-cocktail {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.app-special-menu-img {
+    width: 410px;
+    margin: 0 2rem;
+}
+
+.app-special-menu-img img {
+    width: 100%;
+}
+
+.app-special-menu-items {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 2000px) {
+    .app-special-menu-img {
+        width: 650px;
+    }
+
+    .app-special-menu-img img {
+        height: 950px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app-special-menu-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .app-special-menu-heading {
+        text-align: center;
+    }
+
+    .app-special-menu-img {
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app-special-menu-img {
+        width: 100%;
+    }
+
+    .app-special-menu-heading {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
